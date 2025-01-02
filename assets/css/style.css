@@ -1,0 +1,177 @@
+
+.colclass p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;;
+    font-family: "DM Sans", serif;
+    margin-left: 20px;
+    font-weight:500;
+    line-height: 1.2;
+  
+}
+.span1{
+    display: block;
+    color: hsl(256, 67%, 59%);
+}
+#span2{
+    color:  hsl(39, 100%, 71%);
+}
+.colclass img {
+    margin-left: 20px;;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: 1/4 and 3/4 width */
+    
+    margin: 50px;
+    gap: 20px;
+    grid-template-areas: 
+"colclass rowclass";
+}
+.grid_container, .rowclass, .colclass {
+   
+  
+   
+  
+}
+.rowclass{
+
+    display: grid;
+    gap:10px;
+    grid-template-rows: 3fr 1fr;
+    grid-area: rowclass;
+}
+
+
+.colclass{
+   
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 2fr 2fr;
+    grid-area: colclass; 
+}
+
+.bottom{
+
+  
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 3fr;
+}
+.top{
+
+  
+    display: grid;
+    gap:10px;
+    grid-template-columns: 3fr 1fr;
+}
+.top1{
+
+  
+    display: grid;
+    gap:5px;
+    grid-template-rows: 2fr 2fr;
+}
+.top2{
+
+  
+    display: grid;
+    gap:5px;
+    grid-template-columns: 2fr 2fr;
+}
+#p1,#p2{
+    margin-top: 20px;
+}
+#p3{
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "DM Sans", serif;
+    font-size: 3vw;
+}
+
+#p4{
+    color:white;
+    text-align: center;
+    font-family: "DM Sans", serif;
+    font-size: 3vw;
+   
+}
+
+#p5{
+    color:rgb(228, 227, 227);
+    text-align: center;
+    font-family: "DM Sans", serif;
+    font-size: 1vw;
+    margin-bottom: 30px;
+}
+
+#p6{
+    color:rgb(10, 10, 10);
+    font-family: "DM Sans", serif;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-left: 20px;;
+}
+
+#p7{
+    color:rgb(10, 10, 10);
+    font-family: "DM Sans", serif;
+    font-size: 15px;
+    margin-left: 20px;;
+}
+
+
+#p8{
+    color:rgb(10, 10, 10);
+    font-family: "DM Sans", serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+#p9{
+    color:rgb(10, 10, 10);
+    margin-top: 20px;
+    font-family: "DM Sans", serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+    .grid_container {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+        grid-template-areas: 
+"rowclass" /* Row class first */
+"colclass"; /* Col class last */
+
+   
+    }
+    .bottom {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+    }
+    .top {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+    }
+    .top1 {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+    }
+    .top2 {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+    }
+    #p3{
+        font-size: 7vw;
+    }
+    #p4{
+        font-size: 7vw;
+    }
+    #p5{
+        font-size: 4vw;
+    }
+}
